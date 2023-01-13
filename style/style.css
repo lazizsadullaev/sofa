@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@import url(fonts.css);
+
+
+:root{
+    --IM:"Inter-Medium";
+    --IR:"Inter-Regular";
+    --PoppM:"Poppins-Medium";
+    --PoppR:"Poppins-Regular";
+    --PoppSB:"Poppins-SemiBold";
+    --PTSR:"PTSefir-Regular";
+    --PubSR:"PublicSans-Regular";
+    --RoboM:"Roboto-Medium" ;
+}
+
+
+.container{
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav__logo{
+  font-size: 30px;
+}
+
+.nav__icon:hover{
+  color: black;
+}
+
+.nav__icon{
+    font-family: var(--IR);
+    padding: 0 0 9px 0;
+    position: relative;
+    display: block;
+    margin: 0 32.5px;
+    font-size: 16px;
+    line-height: 19px;
+    color:  #616364;
+    transition: 0.5s;
+}
+
+.nav__icon::before{
+   content: "";
+   bottom: 0;
+   position: absolute;
+   width:0%;
+   height: 3px;
+   background-color: #B69874;
+     transition: 0.5s;
+}
+
+.nav__icon:hover::before{
+    width: 100%;
+}
+
+.nav__icons{
+    display: flex;
+ 
+}
+
+.nav__line{
+    height: 2px;
+    width: 30px;
+    background-color: black;
+    display: block;
+    margin: 4px;
+}
+
+
+.nav__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+}
+
+nav{
+    background: #E5E5E5;
+}
+
+
